@@ -13,9 +13,43 @@
     <title>Function Calculator</title>
   </head>
   <body>
-    <h1>Title</h1>
-    <div>input output div</div>
-    <div>buttons div</div>
+    <!-- Title of the program -->
+    <h1 class="title">Function Calculator</h1>
+
+    <!-- Display for the input and output entered -->
+    <div id="output" class="display-div">
+      <p class="input-field">Placeholder</p>
+      =
+      <p class="output-field">Placeholder</p>
+    </div>
+
+    <!-- Numberpad for input to num -->
+    <div id="input" class="number-div">
+      <button onclick="console.log('You clicked 1!')">1</button>
+      <button onclick="console.log('You clicked 2!')">2</button>
+      <button onclick="console.log('You clicked 3!')">3</button>
+      <br />
+      <button onclick="console.log('You clicked 4!')">4</button>
+      <button onclick="console.log('You clicked 5!')">5</button>
+      <button onclick="console.log('You clicked 6!')">6</button>
+      <br />
+      <button onclick="console.log('You clicked 7!')">7</button>
+      <button onclick="console.log('You clicked 8!')">8</button>
+      <button onclick="console.log('You clicked 9!')">9</button>
+      <br />
+      <button onclick="console.log('You clicked 0!')">0</button>
+      <button onclick="console.log('You clicked on the decimal point!')">
+        .
+      </button>
+      <button onclick="console.log('You clicked delete!')">del</button>
+      <br />
+      <button onclick="console.log('You clicked clear all!')">Clear all</button>
+    </div>
+
+    <!-- Function buttons -->
+    <div id="input" class="function-div">function buttons here</div>
+
+    <!-- load JavaScript -->
     <script src="assets/js/script.js"></script>
   </body>
 </html>
