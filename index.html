@@ -20,34 +20,45 @@
     <div id="output" class="display-div">
       <p id="input-field"></p>
       =
-      <p id="output-field">Placeholder</p>
+      <p id="output-field"></p>
     </div>
 
     <!-- Numberpad for input to num -->
     <div id="input" class="number-div">
-      <button class="num" value="1" onclick="numberPad(value)">1</button>
-      <button class="num" value="2" onclick="numberPad(value)">2</button>
-      <button class="num" value="3" onclick="numberPad(value)">3</button>
+      <button value="1" onclick="numberPad(value)">1</button>
+      <button value="2" onclick="numberPad(value)">2</button>
+      <button value="3" onclick="numberPad(value)">3</button>
       <br />
-      <button class="num" value="4" onclick="numberPad(value)">4</button>
-      <button class="num" value="5" onclick="numberPad(value)">5</button>
-      <button class="num" value="6" onclick="numberPad(value)">6</button>
+      <button value="4" onclick="numberPad(value)">4</button>
+      <button value="5" onclick="numberPad(value)">5</button>
+      <button value="6" onclick="numberPad(value)">6</button>
       <br />
-      <button class="num" value="7" onclick="numberPad(value)">7</button>
-      <button class="num" value="8" onclick="numberPad(value)">8</button>
-      <button class="num" value="9" onclick="numberPad(value)">9</button>
+      <button value="7" onclick="numberPad(value)">7</button>
+      <button value="8" onclick="numberPad(value)">8</button>
+      <button value="9" onclick="numberPad(value)">9</button>
       <br />
-      <button class="num" value="0" onclick="numberPad(value)">0</button>
-      <button class="num" value="." onclick="numberPad(value)">.</button>
-      <button class="num" value="del" onclick="numberPad(value)">del</button>
+      <button value="0" onclick="numberPad(value)">0</button>
+      <button value="." onclick="numberPad(value)">.</button>
+      <button value="del" onclick="numberPad(value)">del</button>
       <br />
-      <button class="num" value="clear" onclick="numberPad(value)">
-        Clear all
-      </button>
+      <button value="clear" onclick="numberPad(value)">Clear all</button>
     </div>
 
     <!-- Function buttons -->
-    <div id="input" class="function-div">function buttons here</div>
+    <div id="input" class="function-div">
+      <button value="sin" onclick="functionPad(value)">Sin(x)</button>
+      <button value="cos" onclick="functionPad(value)">Cos(x)</button>
+      <button value="tan" onclick="functionPad(value)">Tan(x)</button>
+      <br />
+      <button value="asin" onclick="functionPad(value)">arc Sin(x)</button>
+      <button value="acos" onclick="functionPad(value)">arc Cos(x)</button>
+      <button value="atan" onclick="functionPad(value)">arc Tan(x)</button>
+      <br />
+      <button value="log" onclick="functionPad(value)">Log 10(x)</button>
+      <button value="ln" onclick="functionPad(value)">Ln</button>
+      <button value="e" onclick="functionPad(value)">e^(x)</button>
+      <button value="=" onclick="functionPad(value)">=</button>
+    </div>
 
     <!-- load JavaScript -->
     <script src="assets/js/script.js"></script>
