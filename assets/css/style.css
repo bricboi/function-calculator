@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* font family for all the text */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* logo size */
+img {
+    width: 33%;
+}
+
+/* Display the number and function screen, inline */
+p {
+    display: inline;
+}
+
+/* button design here */
+button {
+    margin: 5px;
+    padding: 50px;
+    background-color: black;
+    color: white;
+    font-size: large;
+}
+
+/* Center the content in div that are children of body */
+body>div {
+    background-color: blue;
+    border: 1px black solid;
+    text-align: center;
+}
+
+/* CSS for the display design */
+.display-div {
+    height: 30px;
+    background-color: white;
+    border: 2px black solid;
+    text-align: center;
+    font-size: 150%;
+}
+
+/* Style for the buttons div */
+.function-div {
+    height: 50px;
+    background-color: gray;
+    text-align: right;
+    padding-top: 135px;
+}
+
+.number-div {
+    height: 50px;
+    background-color: lightgray;
+    text-align: right;
+}
+
+/* Input buttons styling */
+#input {
+    margin: 10px 0px;
+    text-align: left;
+    height: 50%;
+    display: inline-block;
+}

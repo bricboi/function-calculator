@@ -3,7 +3,7 @@ let fValue = "";
 let result = 0;
 
 // remember to remove console.log outputs before submitting!!!
-
+// 20 is max input of numbers
 // numberPad function for when buttons are pressed /* remove console.log outputs!!! */
 function numberPad(value) {
     switch (value) {
