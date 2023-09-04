@@ -1,5 +1,4 @@
 let inputArray = [];
-let fValue = "";
 let result = 0;
 
 // remember to remove console.log outputs before submitting!!!
@@ -77,6 +76,10 @@ function numberPad(value) {
             console.log(result);
             break;
     }
+    // Resets output field and updates the input field
+    result = "";
+    let outputField = document.getElementById("output-field");
+    outputField.textContent = result;
     let inputField = document.getElementById("input-field");
     inputField.textContent = inputArray.toString().replaceAll(",", "");
 }
@@ -86,59 +89,51 @@ function functionPad(value) {
     switch (value) {
         case "sin":
             console.log("Sin(x)");
-            fValue = "Sin";
             calculateSin();
             break;
         case "cos":
             console.log("Cos(x)");
-            fValue = "Cos";
             calculateCos();
             break;
         case "tan":
             console.log("Tan(x)");
-            fValue = "Tan";
             calculateTan();
             break;
         case "asin":
             console.log("arc Sin(x)");
-            fValue = "aSin";
             calculateArcSin();
             break;
         case "acos":
             console.log("arc Cos(x)");
-            fValue = "aCos";
             calculateArcCos();
             break;
         case "atan":
             console.log("arc Tan(x)");
-            fValue = "aTan";
             calculateArcTan();
             break;
         case "log":
             console.log("Log(x)");
-            fValue = "Log";
             calculateLog10();
             break;
         case "ln":
             console.log("Ln");
-            fValue = "Ln";
             calculateLn();
             break;
         case "e":
             console.log("e^x");
-            fValue = "eX";
             calculateExponent();
             break;
-        case "=":
-            console.log("=");
-            fValue = "=";
-            let outputField = document.getElementById("output-field");
-            outputField.textContent = result;
-            break;
     }
+    finalCalculation();
 }
 
 // Calculation functions below vvv
+// Final calculation
+function finalCalculation() {
+    console.log("=");
+    let outputField = document.getElementById("output-field");
+    outputField.textContent = ` = ${result}`;
+}
 
 // Sin, cos and tan /* remove console.log outputs!!! */
 function calculateSin() {
