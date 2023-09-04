@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
+/* Check CSS if there are things that need to be removed
+and make website responsive to screen size
+*/
+
 /* font family for all the text */
 body {
     font-family: 'Roboto', sans-serif;

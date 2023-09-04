@@ -3,6 +3,10 @@
 let inputArray = [];
 let result = 0;
 
+/* Check JS and try to make buttons from JS,
+check if there are things to remove or add.
+*/
+
 // function numLoad() {
 //     let numDiv = document.getElementsByClassName("test");
 //     numDiv.innerHTML = `

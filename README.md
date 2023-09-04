@@ -1,39 +1,28 @@
-Function Calculator is a website made for students who need/ want to have an easy access to a calculator that has functions, without having to pay alot of manoey just to get access to the functions at hand. Function Calculator is a simple and easy to use calculator app that...
+# Function Calculator
 
-Welcome,
+Welcome! [Function Calculator link](https://bricboi.github.io/function-calculator/)
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Function Calculator is an app that allows people to do simple calculations with functions. It is targeted towards students who need/want to have easy access to an easy to use calculator for functions. Function Calculator is a simple and easy to use app that can performe simple function calculations.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+<!-- Example screenshot on how it looks on different devices here -->
 
-## Codeanywhere Reminders
+## Features <!-- Use screenshots from website to the different sections -->
+At the top of the page is the logo in the style of a function wich is a fun and interresting way of displaying a logo. It is also thematic to what the app is about. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+The app also has a display bar where it will display numbers inputed by the user and will also show the full calculation of the input.
 
-`python3 -m http.server`
+Underneath the display bar there are two keypads. One for inputing numbers, a decimal point, deleteing and clearing the display, and one for the functions. The User will input a number (one decimal point is counted), and will then click on a function button to execute the calculation. Which will then be displayed on the display bar.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+<!-- ## Testing -->
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+<!-- ### Validator testing -->
 
-`http_server`
+<!-- ### Unfixed bugs -->
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+<!-- ## Deployment -->
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+<!-- ## Credits -->
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+<!-- ### Content -->
 
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+<!-- ### Media -->
