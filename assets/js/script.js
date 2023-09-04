@@ -1,5 +1,26 @@
+// const funcDiv = document.getElementsByClassName("function-div");
+
 let inputArray = [];
 let result = 0;
+
+// function numLoad() {
+//     let numDiv = document.getElementsByClassName("test");
+//     numDiv.innerHTML = `
+//     <button value="1" onclick="numberPad(value)">1</button>
+//     <button value="2" onclick="numberPad(value)">2</button>
+//     <button value="3" onclick="numberPad(value)">3</button>
+//     <button value="4" onclick="numberPad(value)">4</button>
+//     <button value="5" onclick="numberPad(value)">5</button>
+//     <button value="6" onclick="numberPad(value)">6</button>
+//     <button value="7" onclick="numberPad(value)">7</button>
+//     <button value="8" onclick="numberPad(value)">8</button>
+//     <button value="9" onclick="numberPad(value)">9</button>
+//     <button value="0" onclick="numberPad(value)">0</button>
+//     <button value="." onclick="numberPad(value)">.</button>
+//     <button value="del" onclick="numberPad(value)">del</button>
+//     <button value="clear" onclick="numberPad(value)">Clear all</button>
+// `;
+// }
 
 // remember to remove console.log outputs before submitting!!!
 // 20 is max input of numbers

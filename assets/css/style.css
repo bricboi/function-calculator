@@ -22,12 +22,11 @@ button {
     background-color: black;
     color: white;
     font-size: large;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Center the content in div that are children of body */
+/* Center the content in div */
 body>div {
-    background-color: blue;
-    border: 1px black solid;
     text-align: center;
 }
 
@@ -42,22 +41,24 @@ body>div {
 
 /* Style for the buttons div */
 .function-div {
-    height: 50px;
     background-color: gray;
     text-align: right;
-    padding-top: 135px;
+    width: 590px;
+    overflow: none;
 }
 
 .number-div {
-    height: 50px;
+    margin-top: 20px;
+    width: 381px;
     background-color: lightgray;
     text-align: right;
+    overflow: none;
 }
 
 /* Input buttons styling */
 #input {
-    margin: 10px 0px;
-    text-align: left;
     height: 50%;
+    text-align: left;
+    overflow: none;
     display: inline-block;
 }

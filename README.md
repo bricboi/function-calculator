@@ -1,4 +1,4 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+Function Calculator is a website made for students who need/ want to have an easy access to a calculator that has functions, without having to pay alot of manoey just to get access to the functions at hand. Function Calculator is a simple and easy to use calculator app that...
 
 Welcome,
 
