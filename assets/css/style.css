@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
-/* Check CSS if there are things that need to be removed
-and make website responsive to screen size
-*/
-
 /* font family for all the text */
 body {
     font-family: 'Roboto', sans-serif;
@@ -37,10 +33,13 @@ body>div {
 /* CSS for the display design */
 .display-div {
     height: 30px;
+    width: auto;
     background-color: white;
     border: 2px black solid;
     text-align: center;
     font-size: 150%;
+    display: block;
+    overflow: none;
 }
 
 /* Style for the buttons div */
@@ -65,4 +64,29 @@ body>div {
     text-align: left;
     overflow: none;
     display: inline-block;
+}
+
+/* Media queries */
+@media screen and (max-width: 425px) {
+    body {
+        font-size: 60%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    button {
+        margin: 5px;
+        padding: 30px;
+        background-color: black;
+        color: white;
+        font-size: small;
+    }
+
+    #input {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
 }
