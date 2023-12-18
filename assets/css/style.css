@@ -15,7 +15,7 @@ p {
     display: inline;
 }
 
-/* button design here */
+/* Button design */
 button {
     margin: 5px;
     padding: 50px;
@@ -39,7 +39,6 @@ body>div {
     text-align: center;
     font-size: 150%;
     display: block;
-    overflow: none;
 }
 
 /* Style for the buttons div */
@@ -47,7 +46,6 @@ body>div {
     background-color: gray;
     text-align: right;
     width: 590px;
-    overflow: none;
 }
 
 .number-div {
@@ -55,14 +53,18 @@ body>div {
     width: 381px;
     background-color: lightgray;
     text-align: right;
-    overflow: none;
 }
 
 /* Input buttons styling */
-#input {
+#num-input {
     height: 50%;
     text-align: left;
-    overflow: none;
+    display: inline-block;
+}
+
+#func-input {
+    height: 50%;
+    text-align: left;
     display: inline-block;
 }
 

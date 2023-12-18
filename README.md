@@ -27,14 +27,6 @@ Underneath the display bar there are two keypads. One for inputing numbers, a de
 ## Testing
 The website has been tested on different web browsers such ass oprah, chrome, edge etc. The website is responsive and the buttons work as they should, performing the calculations correctly.
 
-### Validator testing
-* HTML
-  * Warnings found when checking on [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbricboi.github.io%2Ffunction-calculator%2F)
-* CSS
-  * Warnings found when checking on [CSS Validator](https://codebeautify.org/cssvalidate#)
-* JS
-  * Error found when checking on [JavaScript Validator](https://codebeautify.org/jsvalidate)
-
 ### Unfixed bugs
 * The only bug identified in the app is: When writing a number there is no limit as to how many numbers the user can put in which leads to the numbers ending up off screen.
 

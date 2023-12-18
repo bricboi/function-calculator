@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-
-<!-- 
-    Check if there is something to remove or add.
-    Make buttons from JS.
- -->
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -19,8 +13,10 @@
     <title>Function Calculator</title>
   </head>
   <body>
-    <!-- Title of the program -->
-    <img src="assets/images/logo.png" alt="logo" />
+    <header>
+      <!-- Logo -->
+      <img src="assets/images/logo.png" alt="logo" />
+    </header>
 
     <!-- Display for the input and output entered -->
     <div id="output" class="display-div">
@@ -30,7 +26,7 @@
 
     <div>
       <!-- Numberpad for input to numbers -->
-      <div id="input" class="number-div">
+      <div id="num-input" class="number-div">
         <button value="1" onclick="numberPad(value)">1</button>
         <button value="2" onclick="numberPad(value)">2</button>
         <button value="3" onclick="numberPad(value)">3</button>
@@ -47,7 +43,7 @@
       </div>
 
       <!-- Function buttons for input to functions-->
-      <div id="input" class="function-div">
+      <div id="func-input" class="function-div">
         <button value="sin" onclick="functionPad(value)">Sin(x)</button>
         <button value="cos" onclick="functionPad(value)">Cos(x)</button>
         <button value="tan" onclick="functionPad(value)">Tan(x)</button>

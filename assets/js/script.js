@@ -41,6 +41,7 @@ function numberPad(value) {
             inputArray.push(value);
             break;
         case ".":
+
             /* Check if there already is a decimal and 
             display alert if there is */
             if (inputArray.includes(".")) {
@@ -247,7 +248,7 @@ function calculateArcTan() {
 
 /**
 Calculates the log (in base 10) of the value entered, 
-if it is not empty or a decimal point
+if it is not empty or a decimal point and not 0
 */
 function calculateLog10() {
     if (inputArray == "") {
@@ -269,7 +270,7 @@ function calculateLog10() {
 
 /**
 Calculates the natural log of the value entered, 
-if it is not empty or a decimal point
+if it is not empty or a decimal point and not 0
 */
 function calculateLn() {
     if (inputArray == "") {
