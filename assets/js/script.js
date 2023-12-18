@@ -1,7 +1,10 @@
 let inputArray = [];
 let result = 0;
 
-// numberPad function for when buttons are pressed
+/**
+numberPad checks which number button is pushed 
+and adds the value to the inputArray
+*/
 function numberPad(value) {
     switch (value) {
         case "1":
@@ -55,7 +58,10 @@ function numberPad(value) {
     inputField.textContent = inputArray.toString().replaceAll(",", "");
 }
 
-// functionPad function for when buttons are pressed
+/**
+functionPad checks which function button is pushed 
+and performs the corresponding calculation
+*/
 function functionPad(value) {
     switch (value) {
         case "sin":
@@ -86,78 +92,153 @@ function functionPad(value) {
             calculateExponent();
             break;
     }
-    finalCalculation();
+    displayFinalCalculation();
 }
 
-// Calculation functions below vvv
-// Final calculation
-function finalCalculation() {
-    let outputField = document.getElementById("output-field");
-    outputField.textContent = ` = ${result}`;
+// Calculation functions
+
+/**
+Displays calculated output (result) 
+in the outputField with a format " = x"
+*/
+function displayFinalCalculation() {
+    if (inputArray != "") {
+        let outputField = document.getElementById("output-field");
+        outputField.textContent = ` = ${result}`;
+    }
 }
 
-// Sin, cos and tan
+/**
+Calculates the sine of the value entered
+*/
 function calculateSin() {
-    let x = parseFloat(inputArray.join(''));
-    result = Math.sin(x);
-    let inputField = document.getElementById("input-field");
-    inputField.textContent = `Sin(${x})`;
+    if (inputArray == "") {
+        alert("Invalid input. Please enter a number");
+    }
+    else {
+        let x = parseFloat(inputArray.join(''));
+        result = Math.sin(x);
+        let inputField = document.getElementById("input-field");
+        inputField.textContent = `Sin(${x})`;
+    }
 }
 
+/**
+Calculates the cosine of the value entered
+*/
 function calculateCos() {
-    let x = parseFloat(inputArray.join(''));
-    result = Math.cos(x);
-    let inputField = document.getElementById("input-field");
-    inputField.textContent = `Cos(${x})`;
+    if (inputArray == "") {
+        alert("Invalid input. Please enter a number");
+    }
+    else {
+        let x = parseFloat(inputArray.join(''));
+        result = Math.cos(x);
+        let inputField = document.getElementById("input-field");
+        inputField.textContent = `Cos(${x})`;
+    }
 }
 
+/**
+Calculates the tangent of the value entered
+*/
 function calculateTan() {
-    let x = parseFloat(inputArray.join(''));
-    result = Math.tan(x);
-    let inputField = document.getElementById("input-field");
-    inputField.textContent = `Tan(${x})`;
+    if (inputArray == "") {
+        alert("Invalid input. Please enter a number");
+    }
+    else {
+        let x = parseFloat(inputArray.join(''));
+        result = Math.tan(x);
+        let inputField = document.getElementById("input-field");
+        inputField.textContent = `Tan(${x})`;
+    }
 }
 
-// arc functions
+/**
+Calculates the arc sine of the value entered
+*/
 function calculateArcSin() {
-    let x = parseFloat(inputArray.join(''));
-    result = Math.asin(x);
-    let inputField = document.getElementById("input-field");
-    inputField.textContent = `arc Sin(${x})`;
+    if (inputArray == "") {
+        alert("Invalid input. Please enter a number");
+    }
+    else {
+        let x = parseFloat(inputArray.join(''));
+        result = Math.asin(x);
+        let inputField = document.getElementById("input-field");
+        inputField.textContent = `arc Sin(${x})`;
+    }
 }
 
+/**
+Calculates the arc cosine of the value entered
+*/
 function calculateArcCos() {
-    let x = parseFloat(inputArray.join(''));
-    result = Math.acos(x);
-    let inputField = document.getElementById("input-field");
-    inputField.textContent = `arc Cos(${x})`;
+    if (inputArray == "") {
+        alert("Invalid input. Please enter a number");
+    }
+    else {
+        let x = parseFloat(inputArray.join(''));
+        result = Math.acos(x);
+        let inputField = document.getElementById("input-field");
+        inputField.textContent = `arc Cos(${x})`;
+    }
 }
 
+/**
+Calculates the arc tangent of the value entered
+*/
 function calculateArcTan() {
-    let x = parseFloat(inputArray.join(''));
-    result = Math.asin(x);
-    let inputField = document.getElementById("input-field");
-    inputField.textContent = `arc Tan(${x})`;
+    if (inputArray == "") {
+        alert("Invalid input. Please enter a number");
+    }
+    else {
+        let x = parseFloat(inputArray.join(''));
+        result = Math.asin(x);
+        let inputField = document.getElementById("input-field");
+        inputField.textContent = `arc Tan(${x})`;
+    }
 }
 
-// log and e functions
+/**
+Calculates the log (in base 10) of the value entered
+*/
 function calculateLog10() {
-    let x = parseFloat(inputArray.join(''));
-    result = Math.log10(x);
-    let inputField = document.getElementById("input-field");
-    inputField.textContent = `Log10(${x})`;
+    if (inputArray == "") {
+        alert("Invalid input. Please enter a number");
+    }
+    else {
+        let x = parseFloat(inputArray.join(''));
+        result = Math.log10(x);
+        let inputField = document.getElementById("input-field");
+        inputField.textContent = `Log10(${x})`;
+    }
 }
 
+/**
+Calculates the natural log of the value entered
+*/
 function calculateLn() {
-    let x = parseFloat(inputArray.join(''));
-    result = Math.log(x);
-    let inputField = document.getElementById("input-field");
-    inputField.textContent = `Log(${x})`;
+    if (inputArray == "") {
+        alert("Invalid input. Please enter a number");
+    }
+    else {
+        let x = parseFloat(inputArray.join(''));
+        result = Math.log(x);
+        let inputField = document.getElementById("input-field");
+        inputField.textContent = `Log(${x})`;
+    }
 }
 
+/**
+Calculates e to the power of the value entered
+*/
 function calculateExponent() {
-    let x = parseFloat(inputArray.join(''));
-    result = Math.exp(x);
-    let inputField = document.getElementById("input-field");
-    inputField.textContent = `e^(${x})`;
+    if (inputArray == "") {
+        alert("Invalid input. Please enter a number");
+    }
+    else {
+        let x = parseFloat(inputArray.join(''));
+        result = Math.exp(x);
+        let inputField = document.getElementById("input-field");
+        inputField.textContent = `e^(${x})`;
+    }
 }
