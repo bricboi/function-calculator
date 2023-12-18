@@ -256,6 +256,9 @@ function calculateLog10() {
     else if (inputArray == ".") {
         alert("Invalid input. Please enter a number");
     }
+    else if (inputArray == "0") {
+        alert("Can not calculate the log of 0. Please try another number");
+    }
     else {
         let x = parseFloat(inputArray.join(''));
         result = Math.log10(x);
@@ -274,6 +277,9 @@ function calculateLn() {
     }
     else if (inputArray == ".") {
         alert("Invalid input. Please enter a number");
+    }
+    else if (inputArray == "0") {
+        alert("Can not calculate the natural log of 0. Please try another number");
     }
     else {
         let x = parseFloat(inputArray.join(''));
