@@ -1,6 +1,9 @@
 let inputArray = [];
 let result = 0;
 
+
+// Button functions
+
 /**
 numberPad checks which number button is pushed 
 and adds the value to the inputArray
@@ -38,8 +41,16 @@ function numberPad(value) {
             inputArray.push(value);
             break;
         case ".":
-            inputArray.push(value);
-            break;
+            /* Check if there already is a decimal and 
+            display alert if there is */
+            if (inputArray.includes(".")) {
+                alert("Invalid input. Too many decimal points!");
+                break;
+            }
+            else {
+                inputArray.push(value);
+                break;
+            }
         case "del":
             inputArray.pop();
             break;
@@ -50,7 +61,7 @@ function numberPad(value) {
             outputField.textContent = result;
             break;
     }
-    // Resets output field and updates the input field
+    // Reset output field and updates the input field
     result = "";
     let outputField = document.getElementById("output-field");
     outputField.textContent = result;
@@ -95,24 +106,31 @@ function functionPad(value) {
     displayFinalCalculation();
 }
 
+
 // Calculation functions
 
 /**
 Displays calculated output (result) 
-in the outputField with a format " = x"
+in the outputField, only if it is not empty or a decimal point
 */
 function displayFinalCalculation() {
     if (inputArray != "") {
         let outputField = document.getElementById("output-field");
         outputField.textContent = ` = ${result}`;
     }
+    else if (inputArray == ".") {
+        alert("Invalid input. Please enter a number");
+    }
 }
 
 /**
-Calculates the sine of the value entered
+Calculates the sine of the value entered, if it is not empty or a decimal point
 */
 function calculateSin() {
     if (inputArray == "") {
+        alert("Invalid input. Please enter a number");
+    }
+    else if (inputArray == ".") {
         alert("Invalid input. Please enter a number");
     }
     else {
@@ -124,10 +142,14 @@ function calculateSin() {
 }
 
 /**
-Calculates the cosine of the value entered
+Calculates the cosine of the value entered, 
+if it is not empty or a decimal point
 */
 function calculateCos() {
     if (inputArray == "") {
+        alert("Invalid input. Please enter a number");
+    }
+    else if (inputArray == ".") {
         alert("Invalid input. Please enter a number");
     }
     else {
@@ -139,10 +161,14 @@ function calculateCos() {
 }
 
 /**
-Calculates the tangent of the value entered
+Calculates the tangent of the value entered, 
+if it is not empty or a decimal point
 */
 function calculateTan() {
     if (inputArray == "") {
+        alert("Invalid input. Please enter a number");
+    }
+    else if (inputArray == ".") {
         alert("Invalid input. Please enter a number");
     }
     else {
@@ -154,11 +180,18 @@ function calculateTan() {
 }
 
 /**
-Calculates the arc sine of the value entered
+Calculates the arc sine of the value entered, 
+if it is not empty, a decimal point or a number larger than 1
 */
 function calculateArcSin() {
     if (inputArray == "") {
         alert("Invalid input. Please enter a number");
+    }
+    else if (inputArray == ".") {
+        alert("Invalid input. Please enter a number");
+    }
+    else if (inputArray > "1") {
+        alert("Can not calculate the arc Sine of a number larger than 1. Please try another number");
     }
     else {
         let x = parseFloat(inputArray.join(''));
@@ -169,11 +202,18 @@ function calculateArcSin() {
 }
 
 /**
-Calculates the arc cosine of the value entered
+Calculates the arc cosine of the value entered, 
+if it is not empty, a decimal point or a number larger than 1
 */
 function calculateArcCos() {
     if (inputArray == "") {
         alert("Invalid input. Please enter a number");
+    }
+    else if (inputArray == ".") {
+        alert("Invalid input. Please enter a number");
+    }
+    else if (inputArray > "1") {
+        alert("Can not calculate the arc Cosine of a number larger than 1. Please try another number");
     }
     else {
         let x = parseFloat(inputArray.join(''));
@@ -184,11 +224,18 @@ function calculateArcCos() {
 }
 
 /**
-Calculates the arc tangent of the value entered
+Calculates the arc tangent of the value entered, 
+if it is not empty, a decimal point or a number larger than 1
 */
 function calculateArcTan() {
     if (inputArray == "") {
         alert("Invalid input. Please enter a number");
+    }
+    else if (inputArray == ".") {
+        alert("Invalid input. Please enter a number");
+    }
+    else if (inputArray > "1") {
+        alert("Can not calculate the arc Tangent of a number larger than 1. Please try another number");
     }
     else {
         let x = parseFloat(inputArray.join(''));
@@ -199,10 +246,14 @@ function calculateArcTan() {
 }
 
 /**
-Calculates the log (in base 10) of the value entered
+Calculates the log (in base 10) of the value entered, 
+if it is not empty or a decimal point
 */
 function calculateLog10() {
     if (inputArray == "") {
+        alert("Invalid input. Please enter a number");
+    }
+    else if (inputArray == ".") {
         alert("Invalid input. Please enter a number");
     }
     else {
@@ -214,10 +265,14 @@ function calculateLog10() {
 }
 
 /**
-Calculates the natural log of the value entered
+Calculates the natural log of the value entered, 
+if it is not empty or a decimal point
 */
 function calculateLn() {
     if (inputArray == "") {
+        alert("Invalid input. Please enter a number");
+    }
+    else if (inputArray == ".") {
         alert("Invalid input. Please enter a number");
     }
     else {
@@ -229,10 +284,14 @@ function calculateLn() {
 }
 
 /**
-Calculates e to the power of the value entered
+Calculates e to the power of the value entered, 
+if it is not empty or a decimal point
 */
 function calculateExponent() {
     if (inputArray == "") {
+        alert("Invalid input. Please enter a number");
+    }
+    else if (inputArray == ".") {
         alert("Invalid input. Please enter a number");
     }
     else {
